@@ -90,12 +90,6 @@ const TEAM_DATA = [
     desc: "Especialista en arquitectura cloud y microservicios. Dirige equipos tecnológicos internacionales.",
     img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop",
   },
-  {
-    name: "Carlos Silvero",
-    role: "Process & Scale Operations",
-    desc: "Especialista en procesos y escalabilidad. Diseña los sistemas de ejecución dentro de Inception Woman Lab.",
-    img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1000&auto=format&fit=crop",
-  },
 ];
 
 const getInitials = (name: string) =>
@@ -122,8 +116,6 @@ const RED_MARCAS = [
   "Eurecat",
   "Polo Digital",
   "She wins",
-  "UMA",
-  "Universidad europea",
   "FFC",
 ];
 
@@ -353,12 +345,12 @@ const Hero = () => (
         </span>
       </div>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-[#FF007A] text-white px-5 sm:px-8 py-2.5 font-bold uppercase tracking-widest text-xs sm:text-sm hover:bg-[#ffd600] hover:text-black transition-colors rounded-full shadow-md">
-        Aplica
+        Aplica a la convocatoria
       </a>
     </header>
     <div className="flex-1 flex flex-col justify-center mt-[73px] z-10 w-full">
       <div className="w-full md:w-[95%] lg:w-[85%] xl:w-[75%] h-full flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-16 sm:py-24 bg-black/90 sm:bg-transparent sm:bg-gradient-to-r sm:from-black sm:via-black/90 sm:to-transparent backdrop-blur-xl min-h-[calc(90vh-73px)] sm:[mask-image:linear-gradient(to_right,black_55%,transparent_100%)]">
-        <Copete text="Venture Studio Boutique - Malaga" />
+        <Copete text="Venture Studio Boutique - Andalucía" />
         <motion.h1
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -382,9 +374,7 @@ const Hero = () => (
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-wrap items-center gap-3 sm:gap-4 mb-10 text-xs sm:text-sm text-gray-400 font-bold uppercase tracking-widest relative z-10"
         >
-          <span>4 Proyectos / cohorte</span>
-          <span className="text-[#FF007A]">•</span>
-          <span>0€ Fees de entrada</span>
+          <span>Hasta 5 Proyectos / cohorte</span>
           <span className="text-[#FF007A]">•</span>
           <span>15+ Años en ingeniería</span>
         </motion.div>
@@ -395,7 +385,7 @@ const Hero = () => (
           className="flex flex-col sm:flex-row gap-4 relative z-10"
         >
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="group bg-[#FF007A] text-white px-8 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 w-full sm:w-max rounded-full shadow-lg shadow-[#FF007A]/20">
-            Agenda tu primera llamada
+            Aplica a la convocatoria
             <ArrowRight className="group-hover:translate-x-2 transition-transform w-5 h-5" />
           </a>
         </motion.div>
@@ -434,7 +424,7 @@ const TeamSection = () => (
           viewport={{ once: true }}
           className="font-zalando text-4xl md:text-5xl font-bold uppercase tracking-tighter text-white mb-4"
         >
-          Fundadores y operadores. No mentores de PowerPoint
+          Fundadores, operadores y acompañamiento práctico
         </motion.h2>
         <motion.p className="font-roboto text-xl md:text-2xl text-gray-300 font-medium max-w-4xl leading-relaxed">
           Construimos desde la experiencia real en tecnología y escalamiento.
@@ -490,7 +480,6 @@ const TeamSection = () => (
         className="max-w-4xl mx-auto text-center border-t border-zinc-800 pt-8"
       >
         <p className="font-roboto text-lg md:text-xl text-gray-300 font-medium leading-relaxed">
-          No enseñamos emprendimiento desde la teoría. <br />
           <span className="font-bold text-white uppercase tracking-tight">
             Trabajamos desde experiencia real construyendo y escalando compañías
             tecnológicas.
@@ -519,7 +508,7 @@ const Incubadoras = () => {
     },
     {
       title: "Financiación",
-      text: "CDTI · CTA · Horizonte Europa",
+      text: "Pública, privada o híbrida",
       icon: <Landmark className="w-10 h-10 text-white" />,
       theme: "bg-[#FF007A] text-white border-transparent",
       shadow: "shadow-[0_20px_40px_rgba(255,0,122,0.2)]",
@@ -564,8 +553,7 @@ const Incubadoras = () => {
           className="max-w-4xl mx-auto text-center mb-10"
         >
           <p className="font-roboto text-xl md:text-2xl text-gray-300 font-medium leading-relaxed">
-            Seleccionamos 4 proyectos por cohorte. Sin fees. Equity o success
-            fee.{" "}
+            Seleccionamos hasta 5 proyectos por cohorte.{" "}
             <span className="font-bold text-[#FF007A]">
               Nuestros incentivos = tu éxito.
             </span>
@@ -683,7 +671,7 @@ const Statement = () => {
             El futuro de la innovación depende de quién consigue financiación.
           </span>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-transparent border-[2.5px] border-white text-white px-7 py-3 sm:px-10 sm:py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-full">
-            Agenda tu primera llamada
+            Aplica a la convocatoria
           </a>
         </div>
       </div>
@@ -725,7 +713,7 @@ const SectionConstruimosCompanias = () => {
     },
     {
       title: "Financiación",
-      text: "Pública y privada. PI, contratos, internacionalización.",
+      text: "Pública, privada o híbrida",
       icon: <Landmark className="w-8 h-8" />,
     },
     {
@@ -757,7 +745,7 @@ const SectionConstruimosCompanias = () => {
             programas.
           </motion.h2>
           <p className="font-roboto text-xl md:text-2xl text-gray-300 font-medium text-center">
-            Muchas incubadoras ofrecen mentoría
+            Muchas incubadoras ofrecen acompañamiento estándar
           </p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 max-w-7xl mx-auto mb-12 px-2 sm:px-6">
@@ -962,7 +950,7 @@ const SectionCredencialesNiage = () => (
         </h3>
       </div>
       <p className="font-roboto text-lg md:text-xl lg:text-2xl text-gray-400 font-medium max-w-3xl mx-auto leading-relaxed">
-        Inception Woman Lab está respaldada por Niage Consulting, compañía
+        Inception Woman Lab está respaldada por Niage Technology, compañía
         tecnológica con más de 15 años desarrollando soluciones para
         organizaciones como:
       </p>
@@ -1063,6 +1051,11 @@ const SectionLasStartupsNoEscalanSolas = () => {
             Inception Woman Lab existe para reducir esa fricción.
           </p>
         </div>
+        <div className="flex justify-center mt-10">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-transparent border-[2.5px] border-white text-white px-7 py-3 sm:px-10 sm:py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-full">
+            Aplica a la convocatoria
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -1153,8 +1146,8 @@ const Footer = () => (
         <span className="text-gray-600">Entonces hablemos.</span>
       </motion.h2>
       <motion.a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-[#FF007A] text-white px-10 py-5 md:px-16 md:py-6 text-lg md:text-3xl font-black uppercase tracking-widest hover:bg-[#ffd600] hover:text-black transition-all rounded-full mb-12 md:mb-20">
-        Make a call
-      </motion.a>
+        Aplica a la convocatoria
+</motion.a>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 text-left border-t border-zinc-800 pt-8 md:pt-12 relative z-10">
         <div>
           <span className="text-[#ffd600] flex items-center gap-2 font-bold uppercase text-[10px] md:text-xs tracking-widest block mb-3 md:mb-4">
