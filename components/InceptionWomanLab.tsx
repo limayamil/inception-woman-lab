@@ -11,7 +11,10 @@ import {
   Mail,
   Phone,
   MapPin,
-  ShieldCheck,
+  Compass,
+  TrendingUp,
+  Building2,
+  Network,
 } from "lucide-react";
 
 // --- COMPONENTES AUXILIARES ---
@@ -702,24 +705,34 @@ const SectionConstruimosCompanias = () => {
 
   const items = [
     {
-      title: "Producto & Tech",
-      text: "Equipo Niage directo. Cloud, microservicios, ciberseguridad.",
-      icon: <Code className="w-8 h-8" />,
+      title: "Mentoría estratégica",
+      text: "Con founders y operadores con experiencia real construyendo y escalando compañías.",
+      icon: <Compass className="w-7 h-7" />,
     },
     {
-      title: "Reducción de riesgo",
-      text: "Procesos para absorber y escalar conocimiento real.",
-      icon: <ShieldCheck className="w-8 h-8" />,
+      title: "Producto y go-to-market",
+      text: "Apoyo en producto, estrategia y entrada al mercado para acelerar la tracción.",
+      icon: <Rocket className="w-7 h-7" />,
     },
     {
-      title: "Financiación",
-      text: "Pública, privada o híbrida",
-      icon: <Landmark className="w-8 h-8" />,
+      title: "Preparación para fundraising",
+      text: "Estructuramos la compañía y abrimos acceso directo a nuestra red de inversores.",
+      icon: <TrendingUp className="w-7 h-7" />,
     },
     {
-      title: "VC & Expansión",
-      text: "Pitch, family offices, fondos seed, go-to-market.",
-      icon: <Rocket className="w-8 h-8" />,
+      title: "Financiación pública y privada",
+      text: "Acceso a ENISA, CDTI y programas europeos. Posible coinversión en compañías del programa.",
+      icon: <Landmark className="w-7 h-7" />,
+    },
+    {
+      title: "Espacio de trabajo",
+      text: "Sede física en Niage Garage, Málaga, para trabajar codo a codo con el equipo y el ecosistema.",
+      icon: <Building2 className="w-7 h-7" />,
+    },
+    {
+      title: "Red de ecosistema",
+      text: "Comunidad de mentores, emprendedores e inversores que crece con cada compañía.",
+      icon: <Network className="w-7 h-7" />,
     },
   ];
 
@@ -738,45 +751,36 @@ const SectionConstruimosCompanias = () => {
         }}
       />
       <div className="relative z-10 px-6 max-w-7xl mx-auto flex flex-col items-center">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 max-w-3xl">
           <Copete text="Qué ofrecemos" />
-          <motion.h2 className="font-zalando text-[clamp(2.5rem,6vw,5.5rem)] font-bold uppercase tracking-tighter mb-4 leading-none text-white">
-            Construimos compañías. <br className="hidden md:block" /> No
-            programas.
-          </motion.h2>
-          <p className="font-roboto text-xl md:text-2xl text-gray-300 font-medium text-center">
-            Muchas incubadoras ofrecen acompañamiento estándar
+          <p className="font-roboto text-xl md:text-2xl text-gray-300 font-medium text-center mt-4 leading-relaxed">
+            Acompañamiento real, no genérico: experiencia operativa, capital y
+            red puestos al servicio de tu compañía.
           </p>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 max-w-7xl mx-auto mb-12 px-2 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full max-w-7xl mx-auto px-2 sm:px-6">
           {items.map((item, idx) => (
             <motion.div
               key={idx}
               whileHover={{
-                scale: 1.08,
+                scale: 1.03,
                 boxShadow: "0 20px 50px rgba(255, 0, 122, 0.25)",
                 borderColor: "#FF007A",
               }}
-              className="aspect-square w-full max-w-[280px] bg-zinc-900/90 backdrop-blur-sm border border-zinc-800 shadow-2xl rounded-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center group transition-all duration-500 cursor-pointer mx-auto"
+              className="h-full bg-zinc-900/90 backdrop-blur-sm border border-zinc-800 shadow-2xl rounded-[2rem] flex flex-col items-start text-left p-6 md:p-8 group transition-all duration-500 cursor-pointer"
             >
-              <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-[#FF007A]/10 flex items-center justify-center rounded-full text-[#FF007A] group-hover:bg-[#FF007A] group-hover:text-white transition-all duration-500 mb-2 md:mb-3 shrink-0">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-[#FF007A]/10 flex items-center justify-center rounded-full text-[#FF007A] group-hover:bg-[#FF007A] group-hover:text-white transition-all duration-500 mb-4 shrink-0">
                 {item.icon}
               </div>
-              <h4 className="font-zalando text-sm sm:text-base md:text-lg font-bold text-white uppercase tracking-tight leading-tight mb-2">
+              <h4 className="font-zalando text-lg md:text-xl font-bold text-white uppercase tracking-tight leading-tight mb-3">
                 {item.title}
               </h4>
-              <p className="font-roboto text-[10px] sm:text-xs md:text-sm font-medium text-gray-400 leading-tight">
+              <p className="font-roboto text-sm md:text-base font-medium text-gray-400 leading-relaxed">
                 {item.text}
               </p>
             </motion.div>
           ))}
         </div>
-        <p className="font-roboto text-base md:text-lg lg:text-xl text-gray-400 font-normal italic leading-relaxed text-center pb-10">
-          <span className="font-bold text-white not-italic uppercase">
-            Convertimos proyectos tecnológicos prometedores en compañías
-            preparadas para competir.
-          </span>
-        </p>
       </div>
     </div>
   );
