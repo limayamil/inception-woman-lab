@@ -352,9 +352,9 @@ const Hero = () => (
           INCEPTION WOMAN LAB
         </span>
       </div>
-      <button className="bg-[#FF007A] text-white px-5 sm:px-8 py-2.5 font-bold uppercase tracking-widest text-xs sm:text-sm hover:bg-[#ffd600] hover:text-black transition-colors rounded-full shadow-md">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-[#FF007A] text-white px-5 sm:px-8 py-2.5 font-bold uppercase tracking-widest text-xs sm:text-sm hover:bg-[#ffd600] hover:text-black transition-colors rounded-full shadow-md">
         Aplica
-      </button>
+      </a>
     </header>
     <div className="flex-1 flex flex-col justify-center mt-[73px] z-10 w-full">
       <div className="w-full md:w-[95%] lg:w-[85%] xl:w-[75%] h-full flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-16 sm:py-24 bg-black/90 sm:bg-transparent sm:bg-gradient-to-r sm:from-black sm:via-black/90 sm:to-transparent backdrop-blur-xl min-h-[calc(90vh-73px)] sm:[mask-image:linear-gradient(to_right,black_55%,transparent_100%)]">
@@ -394,10 +394,10 @@ const Hero = () => (
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 relative z-10"
         >
-          <button className="group bg-[#FF007A] text-white px-8 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 w-full sm:w-max rounded-full shadow-lg shadow-[#FF007A]/20">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="group bg-[#FF007A] text-white px-8 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 w-full sm:w-max rounded-full shadow-lg shadow-[#FF007A]/20">
             Agenda tu primera llamada
             <ArrowRight className="group-hover:translate-x-2 transition-transform w-5 h-5" />
-          </button>
+          </a>
         </motion.div>
       </div>
     </div>
@@ -682,9 +682,9 @@ const Statement = () => {
           <span className="font-roboto text-xs md:text-sm font-bold text-[#FF007A] uppercase tracking-widest text-center">
             El futuro de la innovación depende de quién consigue financiación.
           </span>
-          <button className="bg-transparent border-[2.5px] border-white text-white px-7 py-3 sm:px-10 sm:py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-full">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-transparent border-[2.5px] border-white text-white px-7 py-3 sm:px-10 sm:py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-full">
             Agenda tu primera llamada
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -1152,9 +1152,9 @@ const Footer = () => (
         ¿Te reconoces? <br className="hidden md:block" />
         <span className="text-gray-600">Entonces hablemos.</span>
       </motion.h2>
-      <motion.button className="bg-[#FF007A] text-white px-10 py-5 md:px-16 md:py-6 text-lg md:text-3xl font-black uppercase tracking-widest hover:bg-[#ffd600] hover:text-black transition-all rounded-full mb-12 md:mb-20">
+      <motion.a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-[#FF007A] text-white px-10 py-5 md:px-16 md:py-6 text-lg md:text-3xl font-black uppercase tracking-widest hover:bg-[#ffd600] hover:text-black transition-all rounded-full mb-12 md:mb-20">
         Make a call
-      </motion.button>
+      </motion.a>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 text-left border-t border-zinc-800 pt-8 md:pt-12 relative z-10">
         <div>
           <span className="text-[#ffd600] flex items-center gap-2 font-bold uppercase text-[10px] md:text-xs tracking-widest block mb-3 md:mb-4">
