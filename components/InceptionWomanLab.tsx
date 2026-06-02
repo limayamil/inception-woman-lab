@@ -98,6 +98,14 @@ const TEAM_DATA = [
   },
 ];
 
+const getInitials = (name: string) =>
+  name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("");
+
 const ALIANZAS_LOGOS = [
   { name: "AWS Startups", style: "font-black tracking-tighter" },
   {
@@ -447,12 +455,17 @@ const TeamSection = () => (
               }}
               className={`bg-zinc-900 p-6 rounded-[2rem] border border-zinc-800 shadow-sm transition-all duration-500 group flex flex-col items-center text-center ${isYellowGlow ? "hover:border-[#ffd600]" : "hover:border-[#FF007A]"}`}
             >
-              <div className="w-24 h-24 md:w-28 md:h-28 rounded-[1.5rem] overflow-hidden mb-5 grayscale group-hover:grayscale-0 transition-all duration-700 ring-2 ring-zinc-800 group-hover:ring-offset-2 group-hover:ring-offset-zinc-900">
-                <ImageWithFallback
-                  src={member.img}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
+              <div
+                aria-label={member.name}
+                className={`w-24 h-24 md:w-28 md:h-28 rounded-[1.5rem] mb-5 grid place-items-center transition-all duration-700 ring-2 ring-zinc-800 group-hover:ring-offset-2 group-hover:ring-offset-zinc-900 ${
+                  isYellowGlow
+                    ? "bg-[#ffd600]/10 text-[#ffd600] group-hover:ring-[#ffd600]"
+                    : "bg-[#FF007A]/10 text-[#FF007A] group-hover:ring-[#FF007A]"
+                }`}
+              >
+                <span className="font-zalando text-2xl md:text-3xl font-bold tracking-tight">
+                  {getInitials(member.name)}
+                </span>
               </div>
               <h3 className="font-zalando text-lg md:text-xl font-bold text-white uppercase tracking-tight mb-1">
                 {member.name}
