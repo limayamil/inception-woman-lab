@@ -123,6 +123,50 @@ const RED_MARCAS = [
   "CTA",
 ];
 
+const CREDENCIALES_LOGOS = [
+  { id: "repsol", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/repsol-logo-2-300x300.webp", alt: "Repsol" },
+  { id: "claro", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/claro-logo-2-300x300.webp", alt: "Claro" },
+  { id: "fcc", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/08/fcc_logo-1-300x300.png", alt: "FCC" },
+  { id: "allgeier", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/11/allgeier-300x300.png", alt: "Allgeier" },
+  { id: "mercadolibre", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/mercadolibre-logo-2-300x300.webp", alt: "Mercado Libre" },
+  { id: "santander", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/santander-logo-2-300x300.webp", alt: "Santander" },
+  { id: "hp", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/hp-logo-2-300x300.webp", alt: "HP" },
+  { id: "nokia", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/nokia-logo-2-300x300.webp", alt: "Nokia" },
+  { id: "fujitsu", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/fujitsu-logo-2-300x300.webp", alt: "Fujitsu" },
+  { id: "puma", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/logo-puma.webp", alt: "Puma" },
+  { id: "konecta", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/konecta-logo-2-300x300.webp", alt: "Konecta" },
+  { id: "renault", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/renault-logo-2-300x300.webp", alt: "Renault" },
+  { id: "iveco", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/iveco-logo-2-300x300.webp", alt: "Iveco" },
+  { id: "arcor", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/arcor-logo-2-300x300.webp", alt: "Arcor" },
+  { id: "coca-cola-andina", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/cocacolaandina-logo-3-300x300.webp", alt: "Coca-Cola Andina" },
+  { id: "att", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/09/att.png", alt: "AT&T" },
+  { id: "naranjax", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/naranjax-logo-2-300x300.webp", alt: "Naranja X" },
+  { id: "grupo-vertice", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/08/grupo_vertice_w-1-300x300.png", alt: "Grupo Vértice" },
+  { id: "interroll", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/11/interroll-1-300x201.png", alt: "Interroll" },
+  { id: "ubp", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/ubp-logo-2-300x300.webp", alt: "UBP" },
+  { id: "ues", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/ues-logo-2-300x300.webp", alt: "UES" },
+  { id: "fadea", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/fadea-logo-2-300x300.webp", alt: "FADEA" },
+  { id: "roela", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/roela-logo-2-300x300.webp", alt: "Roela" },
+  { id: "gebhardt", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/11/gebhardt-1-300x261.png", alt: "Gebhardt" },
+  { id: "inswitch", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/09/inswitch.png", alt: "Inswitch" },
+  { id: "g2k", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/09/g2k.png", alt: "G2K" },
+  { id: "wellnext", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/wellnext-logo-2-300x300.webp", alt: "Wellnext" },
+  { id: "promx", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/promx-logo-2-300x300.webp", alt: "Promx" },
+  { id: "apex", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/apex-logo-2-300x300.webp", alt: "Apex" },
+  { id: "bancor", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/bancor-logo-2-300x300.webp", alt: "Bancor" },
+  { id: "sancor", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/sancor-logo-2-300x300.webp", alt: "Sancor" },
+  { id: "invap", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/invap-logo-2-300x300.webp", alt: "INVAP" },
+  { id: "megatlon", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/megatlon-logo-2-300x300.webp", alt: "Megatlon" },
+  { id: "grido", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/grido-logo-2-300x300.webp", alt: "Grido" },
+  { id: "rickysarkany", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/rickysarkany-logo-2-300x300.webp", alt: "Ricky Sarkany" },
+  { id: "sanborns", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/sanborns-logo-2-300x300.webp", alt: "Sanborns" },
+  { id: "sportsworld", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/sportsworld-logo-300x300.webp", alt: "Sports World" },
+  { id: "cargo", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/cargo-logo-3-300x300.webp", alt: "Cargo" },
+  { id: "cc", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/cc-logo-2-300x300.webp", alt: "CC" },
+  { id: "bardahl", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/bardahl-logo-2-300x300.webp", alt: "Bardahl" },
+  { id: "upc", src: "https://en8.73f.myftpupload.com/wp-content/uploads/2025/04/upc-logo-2-300x300.webp", alt: "UPC" },
+];
+
 const CONFIG_NODOS = {
   amarillo: { r: 255, g: 214, b: 0, glow: "rgba(255, 214, 0, 0.6)" },
   rosa: { r: 255, g: 0, b: 122, glow: "rgba(255, 0, 122, 0.4)" },
@@ -954,19 +998,23 @@ const SectionCredencialesNiage = () => (
         , compañía tecnológica con más de 15 años desarrollando soluciones para
         organizaciones como:
       </p>
-      <div className="pt-8 overflow-hidden flex w-full relative opacity-50">
-        <div className="flex whitespace-nowrap animate-marquee-slow w-fit">
-          {[...Array(6)].map((_, i) => (
-            <div key={i} className="flex items-center">
-              {["Repsol", "Claro", "FCC", "Allgeier"].map((brand) => (
-                <React.Fragment key={brand}>
-                  <span className="font-zalando font-bold text-2xl md:text-4xl uppercase tracking-widest mx-8 text-white">
-                    {brand}
-                  </span>
-                  <span className="text-[#FF007A] text-2xl md:text-4xl font-bold mx-2">
-                    ·
-                  </span>
-                </React.Fragment>
+      <div className="pt-10 overflow-hidden flex w-full">
+        <div className="flex items-center whitespace-nowrap animate-marquee-slow w-max shrink-0">
+          {[...Array(2)].map((_, i) => (
+            <div key={i} className="flex items-center shrink-0">
+              {CREDENCIALES_LOGOS.map((logo) => (
+                <div
+                  key={`${logo.id}-${i}`}
+                  className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32 mx-6 shrink-0"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="max-h-full max-w-full object-contain"
+                    style={{ filter: "brightness(0) invert(0.451)" }}
+                  />
+                </div>
               ))}
             </div>
           ))}
