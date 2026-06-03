@@ -667,9 +667,6 @@ const Statement = () => {
           ))}
         </div>
         <div className="flex flex-col items-center gap-4">
-          <span className="font-roboto text-xs md:text-sm font-bold text-[#FF007A] uppercase tracking-widest text-center">
-            El futuro de la innovación depende de quién consigue financiación.
-          </span>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-transparent border-[2.5px] border-white text-white px-7 py-3 sm:px-10 sm:py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-full">
             Aplica a la convocatoria
           </a>
