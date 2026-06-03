@@ -592,10 +592,6 @@ const Incubadoras = () => {
           viewport={{ once: true }}
           className="max-w-5xl mx-auto text-center"
         >
-          <p className="font-roboto text-lg md:text-xl lg:text-2xl text-gray-400 font-normal leading-relaxed">
-            Somos una incubadora de alta exigencia para mujeres que quieren
-            construir compañías tecnológicas con intención de crecer.
-          </p>
         </motion.div>
       </div>
     </section>
