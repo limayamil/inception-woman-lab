@@ -61,37 +61,37 @@ const TEAM_DATA = [
     name: "Luciana Patiño",
     role: "Co-Founder · Legal, Capital & Exit Strategy",
     desc: "Especialista en legal tech, inversión y operaciones internacionales. Ex Head Legal de BT para Latinoamérica.",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
+    img: "/luciana.jpg",
   },
   {
     name: "Cecilia Calonico",
     role: "Accesibilidad e Inclusión",
     desc: "Defensora de la accesibilidad y la inclusión. Facilitadora el acceso equitativo a la salud a través de soluciones digitales.",
-    img: "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?q=80&w=1000&auto=format&fit=crop",
+    img: "/cecilia.jpg",
   },
   {
     name: "Rodrigo González",
     role: "Co-Founder · Product & Commercial Strategy",
     desc: "Más de 15 años en desarrollo de negocio, producto tecnológico y expansión internacional.",
-    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop",
+    img: "/rodrigo.jpg",
   },
   {
     name: "Laura Gleizer",
     role: "Co-Founder · Operations & Execution",
     desc: "Especialista en operaciones y execution de proyectos tecnológicos complejos. Lidera estructura operativa.",
-    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop",
+    img: "/laura.jpg",
   },
   {
     name: "Lara Moloney, FRSA",
     role: "Brand Ambassador · Venture Readiness",
     desc: "Experta en go-to-market y venture readiness. Más de 28 años en media y consultoría internacional.",
-    img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1000&auto=format&fit=crop",
+    img: "/lara.jpg",
   },
   {
     name: "Juan Mishima",
     role: "Software & Product Development",
     desc: "Especialista en escalado de productos y servicios tecnológicos, con experiencia liderando equipos remotos e internacionales.",
-    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop",
+    img: "/juan.jpg",
   },
 ];
 
@@ -450,16 +450,17 @@ const TeamSection = () => (
               className={`bg-zinc-900 p-6 rounded-[2rem] border border-zinc-800 shadow-sm transition-all duration-500 group flex flex-col items-center text-center ${isYellowGlow ? "hover:border-[#ffd600]" : "hover:border-[#FF007A]"}`}
             >
               <div
-                aria-label={member.name}
-                className={`w-24 h-24 md:w-28 md:h-28 rounded-[1.5rem] mb-5 grid place-items-center transition-all duration-700 ring-2 ring-zinc-800 group-hover:ring-offset-2 group-hover:ring-offset-zinc-900 ${
+                className={`w-24 h-24 md:w-28 md:h-28 rounded-[1.5rem] mb-5 overflow-hidden transition-all duration-700 ring-2 ring-zinc-800 group-hover:ring-offset-2 group-hover:ring-offset-zinc-900 ${
                   isYellowGlow
-                    ? "bg-[#ffd600]/10 text-[#ffd600] group-hover:ring-[#ffd600]"
-                    : "bg-[#FF007A]/10 text-[#FF007A] group-hover:ring-[#FF007A]"
+                    ? "group-hover:ring-[#ffd600]"
+                    : "group-hover:ring-[#FF007A]"
                 }`}
               >
-                <span className="font-zalando text-2xl md:text-3xl font-bold tracking-tight">
-                  {getInitials(member.name)}
-                </span>
+                <ImageWithFallback
+                  src={member.img}
+                  alt={member.name}
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
               <h3 className="font-zalando text-lg md:text-xl font-bold text-white uppercase tracking-tight mb-1">
                 {member.name}
