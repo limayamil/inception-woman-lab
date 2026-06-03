@@ -954,8 +954,16 @@ const SectionCredencialesNiage = () => (
         </h3>
       </div>
       <p className="font-roboto text-lg md:text-xl lg:text-2xl text-gray-400 font-medium max-w-3xl mx-auto leading-relaxed">
-        Inception Woman Lab está respaldada por Niage Technology, compañía
-        tecnológica con más de 15 años desarrollando soluciones para
+        Inception Woman Lab está respaldada por{" "}
+        <a
+          href="https://niage.es"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#FF007A] hover:underline"
+        >
+          Niage Technology
+        </a>
+        , compañía tecnológica con más de 15 años desarrollando soluciones para
         organizaciones como:
       </p>
       <div className="pt-8 overflow-hidden flex w-full relative opacity-50">
@@ -1121,6 +1129,7 @@ const AlliancesSection = () => {
           portafolio. Nos asociamos con organizaciones clave en todo el
           ecosistema emprendedor.
         </motion.p>
+        {/* Logos ocultos momentáneamente
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -1137,6 +1146,7 @@ const AlliancesSection = () => {
             </div>
           ))}
         </motion.div>
+        */}
       </div>
     </section>
   );
