@@ -120,6 +120,7 @@ const RED_MARCAS = [
   "Polo Digital",
   "She wins",
   "FFC",
+  "CTA",
 ];
 
 const CONFIG_NODOS = {
