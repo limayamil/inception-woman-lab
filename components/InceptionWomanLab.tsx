@@ -90,7 +90,7 @@ const TEAM_DATA = [
   {
     name: "Juan Mishima",
     role: "Software & Product Development",
-    desc: "Especialista en arquitectura cloud y microservicios. Dirige equipos tecnológicos internacionales.",
+    desc: "Especialista en escalado de productos y servicios tecnológicos, con experiencia liderando equipos remotos e internacionales.",
     img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop",
   },
 ];
@@ -361,7 +361,7 @@ const Hero = () => (
           transition={{ duration: 0.8 }}
           className="font-zalando text-[clamp(2.2rem,5vw,4.5rem)] font-bold leading-[0.95] tracking-tighter text-white uppercase mb-8 max-w-4xl text-left"
         >
-          No somos una incubadora mas
+          No somos una incubadora más
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: -20 }}
@@ -378,7 +378,7 @@ const Hero = () => (
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-wrap items-center gap-3 sm:gap-4 mb-10 text-xs sm:text-sm text-gray-400 font-bold uppercase tracking-widest relative z-10"
         >
-          <span>Hasta 5 Proyectos / cohorte</span>
+          <span>Hasta 5 Proyectos por cohorte</span>
           <span className="text-[#FF007A]">•</span>
           <span>15+ Años en ingeniería</span>
         </motion.div>
@@ -557,10 +557,7 @@ const Incubadoras = () => {
           className="max-w-4xl mx-auto text-center mb-10"
         >
           <p className="font-roboto text-xl md:text-2xl text-gray-300 font-medium leading-relaxed">
-            Seleccionamos hasta 5 proyectos por cohorte.{" "}
-            <span className="font-bold text-[#FF007A]">
-              Nuestros incentivos = tu éxito.
-            </span>
+            Somos una incubadora de alta exigencia para mujeres que quieren construir compañías tecnológicas con intención de crecer.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 max-w-7xl mx-auto mb-12">
@@ -642,9 +639,7 @@ const Statement = () => {
             viewport={{ once: true }}
             className="font-zalando text-[clamp(1.8rem,4vw,4rem)] font-bold leading-[0.95] tracking-tighter uppercase text-white"
           >
-            El problema no es el talento.
-            <br className="hidden sm:block" />
-            <span className="text-[#FF007A]">Es la infraestructura</span>
+            El futuro de la innovación depende de quién consigue financiación.
           </motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mb-10">
@@ -949,9 +944,7 @@ const SectionCredencialesNiage = () => (
       <div className="flex flex-col items-center">
         <Copete text="Credenciales Niage" />
         <h3 className="font-zalando text-3xl md:text-4xl lg:text-6xl font-bold text-white uppercase tracking-tighter leading-[0.95] mb-4">
-          15+ años ejecutando <br className="hidden lg:block" /> para empresas
-          que no <br className="hidden lg:block" />{" "}
-          <span className="text-[#FF007A]">perdonan errores</span>
+          +15 años ejecutando para empresas líderes del mercado
         </h3>
       </div>
       <p className="font-roboto text-lg md:text-xl lg:text-2xl text-gray-400 font-medium max-w-3xl mx-auto leading-relaxed">
@@ -1053,17 +1046,6 @@ const SectionLasStartupsNoEscalanSolas = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto space-y-1 mt-10">
-          <p className="font-zalando text-2xl md:text-4xl font-bold text-white uppercase tracking-tight leading-none">
-            El talento no desaparece.
-          </p>
-          <p className="font-zalando text-2xl md:text-4xl font-bold text-white uppercase tracking-tight leading-none">
-            El sistema lo filtra.
-          </p>
-          <p className="font-zalando text-2xl md:text-4xl font-bold text-[#FF007A] uppercase tracking-tight leading-none">
-            Inception Woman Lab existe para reducir esa fricción.
-          </p>
-        </div>
         <div className="flex justify-center mt-10">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-transparent border-[2.5px] border-white text-white px-7 py-3 sm:px-10 sm:py-4 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-full">
             Aplica a la convocatoria
@@ -1071,85 +1053,6 @@ const SectionLasStartupsNoEscalanSolas = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-const AlliancesSection = () => {
-  useEffect(() => {
-    let anim: NodeAnimation | null = null;
-    const initAnim = () => {
-      anim = new NodeAnimation(
-        "Seccion_Alianzas",
-        "Canvas_Alianzas",
-        "izquierda"
-      );
-    };
-    if (document.readyState === "complete") {
-      initAnim();
-    } else {
-      window.addEventListener("load", initAnim);
-    }
-    return () => {
-      window.removeEventListener("load", initAnim);
-      anim?.destroy();
-    };
-  }, []);
-
-  return (
-    <section
-      id="Seccion_Alianzas"
-      className="relative py-12 md:py-20 px-6 lg:px-20 bg-black overflow-hidden"
-    >
-      <canvas
-        id="Canvas_Alianzas"
-        className="absolute inset-0 z-0 w-full h-full"
-        style={{
-          maskImage: "radial-gradient(circle, black 50%, transparent 95%)",
-          WebkitMaskImage:
-            "radial-gradient(circle, black 50%, transparent 95%)",
-        }}
-      />
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="font-zalando text-[clamp(2rem,4vw,3.5rem)] font-bold uppercase tracking-tighter text-white mb-4"
-        >
-          Nuestras Alianzas Estratégicas
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="font-roboto text-lg md:text-xl text-gray-400 font-medium max-w-4xl mx-auto leading-relaxed mb-10"
-        >
-          Nuestra red de alianzas estratégicas es crucial para fomentar la
-          innovación y el crecimiento dentro de nuestras compañías del
-          portafolio. Nos asociamos con organizaciones clave en todo el
-          ecosistema emprendedor.
-        </motion.p>
-        {/* Logos ocultos momentáneamente
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-20"
-        >
-          {ALIANZAS_LOGOS.map((logo, idx) => (
-            <div
-              key={idx}
-              className={`font-roboto text-xl md:text-2xl text-gray-500 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-[#FF007A] transition-all duration-300 cursor-pointer ${logo.style}`}
-            >
-              {logo.name}
-            </div>
-          ))}
-        </motion.div>
-        */}
-      </div>
-    </section>
   );
 };
 
@@ -1223,7 +1126,6 @@ export default function InceptionWomanLab() {
       <SectionTargetProfile />
       <SectionCredencialesNiage />
       <SectionLasStartupsNoEscalanSolas />
-      <AlliancesSection />
       <Footer />
     </div>
   );
