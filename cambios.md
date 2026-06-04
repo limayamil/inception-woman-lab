@@ -1,27 +1,53 @@
-Aplica estos cambios en la home de Inception Woman Lab.
+Aplicar los siguientes cambios en la web Inception Woman Lab:
 
-1. En el hero, cambia el título principal de “No somos una incubadora mas” a “No somos una incubadora más”. Solo agrega la tilde en “más”.
+1. Actualizar la tarjeta de Luciana Patiño en la sección “Quiénes somos”.
+Mantener su nombre e imagen actual, pero reemplazar el cargo y la descripción por este contenido:
 
-2. En el hero, cambia el indicador “Hasta 5 Proyectos / cohorte” por “Hasta 5 Proyectos por cohorte”.
+Cargo:
+Empresaria · Venture Builder · Constructora de Ecosistemas
 
-3. En la ficha de Juan Mishima, reemplaza la descripción actual por esta:
-“Especialista en escalado de productos y servicios tecnológicos, con experiencia liderando equipos remotos e internacionales.”
+Descripción:
+Más de 12 años construyendo tecnología, impulsando crecimiento empresarial y desarrollando ecosistemas de innovación en distintos mercados.
 
-4. Ajusta el texto descriptivo de la sección “Qué hacemos” para que diga exactamente:
+2. Reemplazar el texto destacado actual de la sección “Qué hacemos”.
+Donde actualmente dice:
+
 “Somos una incubadora de alta exigencia para mujeres que quieren construir compañías tecnológicas con intención de crecer.”
 
-6. En esa misma sección, cambia el titular actual “15+ años ejecutando / para empresas que no / perdonan errores” por:
-“+15 años ejecutando para empresas líderes del mercado”.
+Debe decir:
 
-7. Elimina la frase:
-“El sistema lo filtra. Inception Woman Lab existe para reducir esa fricción.”
-Si al quitarla queda una línea suelta como “El talento no desaparece.”, elimina también esa línea para que el bloque no quede incompleto.
+“Construimos junto a mujeres que quieren convertir tecnología en compañías sólidas, escalables e invertibles.”
 
-8. Elimina por completo el bloque titulado “Nuestras Alianzas Estratégicas”, incluyendo su párrafo descriptivo.
+Aplicar el cambio en todas las apariciones visibles de ese texto, si estuviera duplicado en desktop/mobile o en componentes reutilizados.
 
-9. En la sección “Por qué existimos”, reemplaza el titular:
-“El problema no es el talento. Es la infraestructura”
-por:
-“El futuro de la innovación depende de quién consigue financiación.”
+3. En la sección “Target Profile” / “Sectores prioritarios”, eliminar la pill “IA & Data”.
+No reemplazarla por otra. Mantener el resto de sectores y reacomodar la grilla/listado para que no quede un espacio vacío.
 
-10. Si la frase “El futuro de la innovación depende de quién consigue financiación.” queda repetida dentro de la misma sección después del cambio, deja solo una aparición como titular principal.
+Sectores que deben quedar:
+- HealthTech
+- AgriTech
+- RetailTech
+- EdTech
+- Defensa / Dual-Use
+- Cultural tech
+
+4. Ajustar los dos cuadros relacionados con financiación en la sección “Qué hacemos”.
+La idea es separar claramente financiación pública y financiación privada.
+
+Reemplazar el cuadro actual “Financiación” por:
+
+Título:
+Financiación pública
+
+Texto:
+ENISA · CDTI · programas europeos
+
+Reemplazar el cuadro actual “VC & Expansión” por:
+
+Título:
+Financiación privada
+
+Texto:
+Venture capital · Family offices · Business angels
+
+Corregir cualquier error ortográfico: debe decir “Financiación”, no “Finaciación”.

@@ -59,8 +59,8 @@ const Copete = ({ text }: { text: string }) => (
 const TEAM_DATA = [
   {
     name: "Luciana Patiño",
-    role: "Co-Founder · Legal, Capital & Exit Strategy",
-    desc: "Especialista en legal tech, inversión y operaciones internacionales. Ex Head Legal de BT para Latinoamérica.",
+    role: "Empresaria · Venture Builder · Constructora de Ecosistemas",
+    desc: "Más de 12 años construyendo tecnología, impulsando crecimiento empresarial y desarrollando ecosistemas de innovación en distintos mercados.",
     img: "/luciana.jpg",
   },
   {
@@ -115,12 +115,10 @@ const ALIANZAS_LOGOS = [
 ];
 
 const RED_MARCAS = [
-  "FiGroup",
-  "Eurecat",
-  "Polo Digital",
-  "She wins",
-  "FFC",
-  "CTA",
+  { src: "/logos/ephyx.webp",              alt: "Ephyx" },
+  { src: "/logos/nazari.webp",             alt: "Nazari" },
+  { src: "/logos/polo-de-contenidos.webp", alt: "Polo de Contenidos" },
+  { src: "/logos/universidad-malaga.webp", alt: "Universidad de Málaga" },
 ];
 
 const CREDENCIALES_LOGOS = [
@@ -556,15 +554,15 @@ const Incubadoras = () => {
       shadow: "shadow-[0_20px_40px_rgba(0,0,0,0.6)]",
     },
     {
-      title: "Financiación",
-      text: "Pública, privada o híbrida",
+      title: "Financiación pública",
+      text: "ENISA · CTA · CDTI · Horizonte Europa",
       icon: <Landmark className="w-10 h-10 text-white" />,
       theme: "bg-[#FF007A] text-white border-transparent",
       shadow: "shadow-[0_20px_40px_rgba(255,0,122,0.2)]",
     },
     {
-      title: "VC & Expansión",
-      text: "Pitch · Family offices · Go-to-market",
+      title: "Financiación privada",
+      text: "Venture Capital · Family Offices · Business Angels",
       icon: <Rocket className="w-10 h-10 text-[#FF007A]" />,
       theme: "bg-zinc-900 text-white border-zinc-800",
       shadow: "shadow-[0_20px_40px_rgba(0,0,0,0.6)]",
@@ -602,7 +600,7 @@ const Incubadoras = () => {
           className="max-w-4xl mx-auto text-center mb-10"
         >
           <p className="font-roboto text-xl md:text-2xl text-gray-300 font-medium leading-relaxed">
-            Somos una incubadora de alta exigencia para mujeres que quieren construir compañías tecnológicas con intención de crecer.
+            Construimos junto a mujeres que quieren convertir tecnología en compañías sólidas, escalables e invertibles.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 max-w-7xl mx-auto mb-12">
@@ -888,7 +886,6 @@ const SectionTargetProfile = () => (
               "RetailTech",
               "EdTech",
               "Defensa / Dual-Use",
-              "IA & Data",
               "Cultural tech",
             ].map((sector, i) => (
               <div
@@ -1072,17 +1069,19 @@ const SectionLasStartupsNoEscalanSolas = () => {
             </div>
           </div>
           <div className="lg:col-span-6 flex flex-col items-center justify-center pt-4 md:pt-8 w-full">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4 w-full">
+            <div className="grid grid-cols-2 gap-3 md:gap-4 w-full">
               {RED_MARCAS.map((marca, idx) => (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  className={`bg-zinc-900 border border-zinc-800 py-4 px-2 rounded-xl flex items-center justify-center shadow-md ${idx === 6 ? "col-span-2 sm:col-span-1" : ""}`}
+                  className="bg-[#18181b] rounded-xl flex items-center justify-center shadow-md p-4 h-24"
                 >
-                  <span className="font-zalando font-bold uppercase tracking-widest text-center text-xs text-gray-300">
-                    {marca}
-                  </span>
+                  <ImageWithFallback
+                    src={marca.src}
+                    alt={marca.alt}
+                    className="max-h-14 max-w-full object-contain"
+                  />
                 </motion.div>
               ))}
             </div>
