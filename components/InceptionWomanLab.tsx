@@ -115,10 +115,9 @@ const ALIANZAS_LOGOS = [
 ];
 
 const RED_MARCAS = [
-  { src: "/logos/ephyx.webp",              alt: "Ephyx" },
-  { src: "/logos/nazari.webp",             alt: "Nazari" },
-  { src: "/logos/polo-de-contenidos.webp", alt: "Polo de Contenidos" },
-  { src: "/logos/universidad-malaga.webp", alt: "Universidad de Málaga" },
+  { src: "/logos/logo_cta.png",       alt: "CTA" },
+  { src: "/logos/logo_eurecat_w.png", alt: "Eurecat" },
+  { src: "/logos/logo_figroup_w.png", alt: "Fi Group" },
 ];
 
 const CREDENCIALES_LOGOS = [
@@ -555,7 +554,7 @@ const Incubadoras = () => {
     },
     {
       title: "Financiación pública",
-      text: "ENISA · CTA · CDTI · Horizonte Europa",
+      text: "ENISA · ICEX · CDTI · Horizonte Europa",
       icon: <Landmark className="w-10 h-10 text-white" />,
       theme: "bg-[#FF007A] text-white border-transparent",
       shadow: "shadow-[0_20px_40px_rgba(255,0,122,0.2)]",
@@ -1069,21 +1068,42 @@ const SectionLasStartupsNoEscalanSolas = () => {
             </div>
           </div>
           <div className="lg:col-span-6 flex flex-col items-center justify-center pt-4 md:pt-8 w-full">
-            <div className="grid grid-cols-2 gap-3 md:gap-4 w-full">
-              {RED_MARCAS.map((marca, idx) => (
+            <div className="flex flex-col gap-3 md:gap-4 w-full">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-[#18181b] rounded-xl flex items-center justify-center shadow-md p-6 h-32"
+              >
+                <ImageWithFallback
+                  src="/logos/logo_eurecat_w.png"
+                  alt="Eurecat"
+                  className="max-h-16 max-w-full object-contain"
+                />
+              </motion.div>
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
                 <motion.div
-                  key={idx}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  className="bg-[#18181b] rounded-xl flex items-center justify-center shadow-md p-4 h-24"
+                  className="bg-[#18181b] rounded-xl flex items-center justify-center shadow-md p-6 h-32"
                 >
                   <ImageWithFallback
-                    src={marca.src}
-                    alt={marca.alt}
-                    className="max-h-14 max-w-full object-contain"
+                    src="/logos/logo_cta.png"
+                    alt="CTA"
+                    className="max-h-20 max-w-full object-contain"
                   />
                 </motion.div>
-              ))}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  className="bg-[#18181b] rounded-xl flex items-center justify-center shadow-md p-6 h-32"
+                >
+                  <ImageWithFallback
+                    src="/logos/logo_figroup_w.png"
+                    alt="Fi Group"
+                    className="max-h-20 max-w-full object-contain"
+                  />
+                </motion.div>
+              </div>
             </div>
           </div>
         </div>
