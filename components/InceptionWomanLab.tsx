@@ -449,7 +449,7 @@ const Ticker = () => (
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#FF007A] mx-2"></span>
           <span className="font-zalando font-bold text-xs sm:text-sm md:text-base uppercase tracking-widest mx-4 sm:mx-6 text-white">
-            Cierre de convocatoria: 15 de junio 2026
+            Cierre de convocatoria: 15 de julio 2026
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#FF007A] mx-2"></span>
         </div>
@@ -902,7 +902,7 @@ const SectionTargetProfile = () => (
           <div className="flex flex-col md:flex-row justify-between relative z-10 gap-6 md:gap-0">
             {[
               { date: "15 Abr 2026", label: "Apertura", color: "text-[#ffd600]" },
-              { date: "15 Jun 2026", label: "Cierre", color: "text-[#FF007A]" },
+              { date: "15 Jul 2026", label: "Cierre", color: "text-[#FF007A]" },
               { date: "Sep 2026", label: "Inicio", color: "text-white" },
             ].map(({ date, label, color }) => (
               <div
