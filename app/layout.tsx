@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -131,6 +132,19 @@ export default function RootLayout({
       </head>
       <body className="bg-black antialiased overflow-x-hidden">
         {children}
+        <div id="google_translate_element" />
+        <Script id="google-translate-init" strategy="beforeInteractive">
+          {`function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+              { pageLanguage: 'es', includedLanguages: 'en,es', autoDisplay: false },
+              'google_translate_element'
+            );
+          }`}
+        </Script>
+        <Script
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

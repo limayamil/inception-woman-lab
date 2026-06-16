@@ -350,6 +350,65 @@ class NodeAnimation {
 
 // --- SECCIONES ---
 
+const LanguageToggle = () => {
+  const [lang, setLangState] = useState<"es" | "en">("es");
+
+  useEffect(() => {
+    const match = document.cookie.match(/googtrans=\/es\/(en|es)/);
+    if (match && match[1] === "en") setLangState("en");
+  }, []);
+
+  const setLang = (target: "es" | "en") => {
+    if (target === lang) return;
+    if (target === "es") {
+      document.cookie =
+        "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.${location.hostname}`;
+    } else {
+      document.cookie = `googtrans=/es/${target}; path=/`;
+      document.cookie = `googtrans=/es/${target}; path=/; domain=.${location.hostname}`;
+    }
+    window.location.reload();
+  };
+
+  return (
+    <div className="notranslate flex items-center gap-1.5" translate="no">
+      <button
+        type="button"
+        onClick={() => setLang("es")}
+        aria-label="Cambiar a español"
+        aria-pressed={lang === "es"}
+        className={`rounded-full overflow-hidden ring-1 ring-white/30 transition-opacity ${
+          lang === "es" ? "opacity-100" : "opacity-50 hover:opacity-80"
+        }`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://flagcdn.com/es.svg"
+          alt="Español"
+          className="w-6 h-6 object-cover"
+        />
+      </button>
+      <button
+        type="button"
+        onClick={() => setLang("en")}
+        aria-label="Switch to English"
+        aria-pressed={lang === "en"}
+        className={`rounded-full overflow-hidden ring-1 ring-white/30 transition-opacity ${
+          lang === "en" ? "opacity-100" : "opacity-50 hover:opacity-80"
+        }`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://flagcdn.com/gb.svg"
+          alt="English"
+          className="w-6 h-6 object-cover"
+        />
+      </button>
+    </div>
+  );
+};
+
 const Hero = () => (
   <section className="relative min-h-[90vh] flex flex-col overflow-hidden bg-black selection:bg-[#FF007A] selection:text-white">
     <div className="absolute inset-0 w-full h-full z-0 bg-black/40">
@@ -382,16 +441,19 @@ const Hero = () => (
             <path d="M 38 30 L 65 70 L 80 30" />
           </svg>
         </div>
-        <span className="font-zalando font-black text-[1.35rem] sm:text-[1.6rem] lg:text-[1.85rem] tracking-tighter uppercase text-white hidden sm:block mt-1">
+        <span className="notranslate font-zalando font-black text-[1.35rem] sm:text-[1.6rem] lg:text-[1.85rem] tracking-tighter uppercase text-white hidden sm:block mt-1" translate="no">
           INCEPTION WOMAN LAB
         </span>
-        <span className="font-zalando font-black text-sm tracking-tighter uppercase text-white sm:hidden mt-1">
+        <span className="notranslate font-zalando font-black text-sm tracking-tighter uppercase text-white sm:hidden mt-1" translate="no">
           INCEPTION WOMAN LAB
         </span>
       </div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-[#FF007A] text-white px-5 sm:px-8 py-2.5 font-bold uppercase tracking-widest text-xs sm:text-sm hover:bg-[#ffd600] hover:text-black transition-colors rounded-full shadow-md">
-        Aplica a la convocatoria
-      </a>
+      <div className="flex items-center gap-3 sm:gap-5">
+        <LanguageToggle />
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU2pAgtSXaryQAGW5GUzGOYOIajQzm8DTBrh9oSWHOthYvDA/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="bg-[#FF007A] text-white px-5 sm:px-8 py-2.5 font-bold uppercase tracking-widest text-xs sm:text-sm hover:bg-[#ffd600] hover:text-black transition-colors rounded-full shadow-md">
+          Aplica a la convocatoria
+        </a>
+      </div>
     </header>
     <div className="flex-1 flex flex-col justify-center mt-[73px] z-10 w-full">
       <div className="w-full md:w-[95%] lg:w-[85%] xl:w-[75%] h-full flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-16 sm:py-24 bg-black/90 sm:bg-transparent sm:bg-gradient-to-r sm:from-black sm:via-black/90 sm:to-transparent backdrop-blur-xl min-h-[calc(90vh-73px)] sm:[mask-image:linear-gradient(to_right,black_55%,transparent_100%)]">
